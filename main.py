@@ -9,6 +9,13 @@ def isPrime(n):
 input_str = input("Enter a list of numbers separated by space: ") 
 # Tách chuỗi thành các chuỗi con và chuyển đổi chúng thành số nguyên 
 numbers = [int(num) for num in input_str.split()] 
+def countPrimes(numbers):
+    count = 0
+    for num in numbers:
+        if isPrime(num):
+            count += 1
+    return count
+    
 print("The list of numbers is:", numbers) 
 # Test the function on the first number of the list if it exists 
 if numbers: 
