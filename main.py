@@ -17,3 +17,12 @@ if numbers:
         print(f"{num_to_check} is a prime number.") 
     else: 
         print(f"{num_to_check} is not a prime number.")
+
+def sortArray(arr):
+    n = len(arr)
+    sorted_arr = arr.copy()
+    for i in range(n):
+        for j in range(0, n - i - 1):
+            if sorted_arr[j] > sorted_arr[j + 1]:
+                sorted_arr[j], sorted_arr[j + 1] = sorted_arr[j + 1], sorted_arr[j]
+    return sorted_arr
