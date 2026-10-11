@@ -15,15 +15,14 @@ def countPrimes(numbers):
         if isPrime(num):
             count += 1
     return count
-    
 print("The list of numbers is:", numbers) 
 # Test the function on the first number of the list if it exists 
 if numbers: 
         num_to_check = numbers[0] 
-    if isPrime(num_to_check): 
-        print(f"{num_to_check} is a prime number.") 
-    else: 
-        print(f"{num_to_check} is not a prime number.")
+if isPrime(num_to_check): 
+    print(f"{num_to_check} is a prime number.") 
+else: 
+    print(f"{num_to_check} is not a prime number.")
 
 def sortArray(arr):
     n = len(arr)
